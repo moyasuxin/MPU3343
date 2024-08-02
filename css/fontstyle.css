@@ -17,4 +17,22 @@
     color: #000;
     font-weight: 400;
     font-size: 24px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.h1title{
+    text-align: center;
+    color: #A91A1A;
+    font-size: 50px;
+}
+
+.h2title{
+    margin-left: 5rem;
+    color: #A91A1A;
+    font-size: 30px;
+}
+
+p{
+    margin: 0;
 }

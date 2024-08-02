@@ -4,4 +4,6 @@ body{
     background-color: #C4A06A;
     background-size: cover;
     font-family: 'Abhaya Libre';
+    margin: 0;
+    padding: 0;
 }

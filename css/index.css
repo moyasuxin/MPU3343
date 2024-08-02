@@ -16,6 +16,7 @@ div.dashed5:before {
     bottom: -3px;
     left: -3px;
     right: -3px;
+    z-index: 1; /* Ensure this is lower than the z-index of the <a> elements */
 }
 
 .dash{
@@ -38,12 +39,198 @@ div.dashed5:before {
 }
 
 .titlecontainer{
-    width: 15rem;
-    height: 4rem;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35rem;
+    height: 8rem;
 }
 
 .datecontainer{
-    width: 15rem;
-    height: 4rem;
+    width: 10rem;
+    height: 1.5rem;
     margin-right: 5rem;
+}
+
+.langcontainer{
+    margin-top: .2rem;
+}
+.titlecontent{
+    margin-bottom: .2rem;
+    font-weight: 1000;
+    font-size: 60px;
+    font-family: 'Abril Fatface';
+    letter-spacing: -1.5px;
+    padding: 0 .5rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2; /* Ensure this is higher than the z-index of the pseudo-element */
+    position: relative; /* Position the element so z-index is applied */
+}
+@keyframes blink{
+    0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+a:hover{
+    animation: blink 1s linear infinite;
+}
+a.active{
+    color: #000;
+    margin: 0 .4rem;
+}
+a.lang{
+    color: #727272;
+    margin: 0 .4rem;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0.5rem 1rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.headercontainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    gap: 2rem;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav{
+    color: #727272;
+    padding: .5rem;
+}
+
+.navactive{
+    color: #000;
+    padding: .5rem;
+}
+
+.container1{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.con1sub1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.con1sub2{
+    background-color: #6C6C6C;
+    width: 1px;
+    height: 28rem;
+}
+
+.con1sub3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    font-size: 14px;
+}
+.con1sub3 p{
+    margin-bottom: 10px;
+}
+
+.timelinecontainer{
+    border: solid 1px #000;
+    width: 90%;
+    height: 15rem;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container2{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.con2sub2{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 14px;
+    width: 62%;
+    font-size: 14px;
+}
+.container3{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.con3sub1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 14px;
+    width: 50%;
+    font-size: 14px;
+}
+.con3sub2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    font-size: 14px;
+}
+.container4{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.con4sub1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 14px;
+    width: 29%;
+}
+
+.con4sub2{
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 auto;
+    font-size: 14px;
+    width: 29%;
+}
+
+.con4sub3{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 14px;
+    width: 29%;
 }
