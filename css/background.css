@@ -2,7 +2,7 @@
 body{
     background-image: url("/image/bg.png");
     background-color: #C4A06A;
-    background-size: cover;
+    background-size:contain;
     font-family: 'Abhaya Libre';
     margin: 0;
     padding: 0;
