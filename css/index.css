@@ -199,9 +199,9 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 20px;
     width: 62%;
-    font-size: 14px;
+
 }
 .container3{
     display: flex;
@@ -214,9 +214,9 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 20px;
     width: 50%;
-    font-size: 14px;
+
 }
 .con3sub2{
     display: flex;
@@ -284,6 +284,12 @@ nav{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10rem 15rem;
+    
+}
+.con6sub1 img{
+    object-fit: cover;
+    width: 10rem;
+    height: 15rem;
 }
 .container6 img{
     width: 10rem;
@@ -298,9 +304,17 @@ nav{
 }
 
 .container7 img{
-    width: 10rem;
+    width: 170px;
+    height: 250px;
 }
 
+.con7sub1{
+    display: flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    font-size: 16px;
+    width: 90%;
+}
 
 footer{
     display: flex;
@@ -324,4 +338,7 @@ footer{
 }
 .paddingend{
     padding-bottom: 5rem;
+}
+.padding-endx{
+    padding-top: 5rem;
 }
