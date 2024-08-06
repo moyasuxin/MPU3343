@@ -271,7 +271,9 @@ nav{
     flex: 0 0 auto;
     width: 50%;
 }
-
+.con5sub1 p{
+    margin: 0 0 1rem 0;
+}
 .container6{
     display: flex;
     justify-content: center;
@@ -312,4 +314,14 @@ footer{
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.container8{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+.paddingend{
+    padding-bottom: 5rem;
 }
