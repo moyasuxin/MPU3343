@@ -13,6 +13,12 @@
 #top{
     overflow-y: scroll;
 }
+.container-big{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .container{
     width: 100%;
     height: 10rem;
@@ -190,9 +196,8 @@ nav{
 .container2{
     display: flex;
     flex: 0 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 16px;
 }
 
 .con2sub2{
@@ -206,9 +211,9 @@ nav{
 .container3{
     display: flex;
     flex: 0 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    
 }
 .con3sub1{
     display: flex;
@@ -228,9 +233,8 @@ nav{
 .container4{
     display: flex;
     flex: 0 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 16px;
 }
 
 .con4sub1{
