@@ -199,7 +199,7 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-size: 20px;
+    font-size: 17px;
     width: 62%;
 
 }
@@ -214,7 +214,7 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-size: 20px;
+    font-size: 17px;
     width: 50%;
 
 }
@@ -223,7 +223,7 @@ nav{
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 17px;
 }
 .container4{
     display: flex;
@@ -237,7 +237,7 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 17px;
     width: 29%;
 }
 
@@ -246,7 +246,7 @@ nav{
     flex-direction: column;
 
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 17px;
     width: 29%;
 }
 
@@ -254,7 +254,7 @@ nav{
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 17px;
     width: 29%;
 }
 
@@ -272,6 +272,26 @@ nav{
     width: 50%;
 }
 .con5sub1 p{
+    margin: 0 0 1rem 0;
+    font-size: 17px;
+}
+
+.container5s{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.con5sub2{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 60%;
+    align-items: center;
+}
+.con5sub2 p{
     margin: 0 0 1rem 0;
     font-size: 17px;
 }
@@ -313,7 +333,7 @@ nav{
     display: flex;
     flex: 0 0 auto;
     gap: 16px;
-    font-size: 16px;
+    font-size: 17px;
     width: 90%;
 }
 
@@ -336,10 +356,23 @@ footer{
     flex: 0 0 auto;
     flex-direction: column;
     margin-left: 5rem;
+
 }
 .paddingend{
     padding-bottom: 5rem;
 }
 .padding-endx{
     padding-top: 5rem;
+}
+
+.horizon{
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10rem;
+}
+
+.horizon img{
+    width: 27rem;
+    height: 15rem;
+    padding: 1rem;
 }
