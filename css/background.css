@@ -11,3 +11,7 @@ body{
 .lim:hover{
     content: url("/image/limss.png");
 }
+
+.center{
+    align-self: center;
+}

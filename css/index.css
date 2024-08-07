@@ -234,7 +234,6 @@ nav{
     display: flex;
     flex: 0 0 auto;
     justify-content: space-between;
-    align-items: center;
 }
 
 .con4sub1{
@@ -272,8 +271,7 @@ nav{
 .con5sub1{
     display: flex;
     flex-direction: column;
-    flex: 0 0 auto;
-    width: 50%;
+    
 }
 .con5sub1 p{
     margin: 0 0 1rem 0;
@@ -303,6 +301,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .con6sub1{
@@ -316,6 +315,25 @@ nav{
     width: 10rem;
     height: 15rem;
 }
+.con6sub2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10rem 0;
+}
+.con6sub3{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+.con6sub3 video{
+    width: 50rem;
+    padding: 1rem;
+    align-items: center;
+}
+
 .container6 img{
     width: 10rem;
 }
@@ -323,14 +341,13 @@ nav{
 .container7{
     display: flex;
     flex: 0 0 auto;
-    gap: 5rem;
     flex-direction: column;
-    margin-left: 5rem;
+    justify-content: space-between;
 }
 
 .container7 img{
-    width: 170px;
-    height: 250px;
+    width: 10rem;
+    height: 13rem;
 }
 
 .con7sub1{
@@ -338,12 +355,22 @@ nav{
     flex: 0 0 auto;
     gap: 16px;
     font-size: 17px;
-    width: 90%;
 }
+.con7sub2{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+.con6sub2 img{
+    object-fit: cover;
+    width: 25rem;
+    height: 18rem;
+}
+
 
 footer{
     display: flex;
-    bottom: -100vh;
+    bottom: -30vh;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding : 0.5rem 0;
@@ -359,7 +386,6 @@ footer{
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    margin-left: 5rem;
 
 }
 .paddingend{
@@ -376,7 +402,25 @@ footer{
 }
 
 .horizon img{
-    width: 27rem;
-    height: 15rem;
+    width: 30rem;
+    height: 18rem;
     padding: 1rem;
+    object-fit: cover;
+}
+.con5sub1 a{
+    text-decoration:underline;
+}
+.con5sub1 a:hover{
+    animation: none;
+
+}
+
+.con6sub4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5rem;
+}
+
+.con6sub4 img{
+    height: 20rem;
 }
