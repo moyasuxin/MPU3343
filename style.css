@@ -1,0 +1,483 @@
+.weatherhead{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    align-items: start;
+}
+.weathercontent{
+    color: #707070;
+    margin: 0;
+    margin-top: .5rem;
+    margin-left: 2.5rem;
+}
+
+.date{
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.h1title{
+    text-align: center;
+    color: #A91A1A;
+    font-size: 50px;
+}
+
+.h2title{
+    color: #A91A1A;
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+p{
+    margin: 0;
+}
+
+*, html, body {
+
+    scroll-behavior: smooth !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#time{
+    overflow-y: scroll;
+}
+#top{
+    overflow-y: scroll;
+}
+.container-big{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+div.dashed5:before {
+    content: "";
+    position: absolute;
+    border: 5px dashed #939393;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    z-index: 1; /* Ensure this is lower than the z-index of the <a> elements */
+}
+
+.dash{
+    overflow: hidden;
+    position: relative;
+}
+
+.containerinside{
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weathercontainer{
+    width: 15rem;
+    height: 4rem;
+    margin-left: 5rem;
+}
+
+.titlecontainer{
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35rem;
+    height: 8rem;
+}
+
+.datecontainer{
+    width: 10rem;
+    height: 1.5rem;
+    margin-right: 5rem;
+}
+
+.langcontainer{
+    margin-top: .2rem;
+}
+.titlecontent{
+    margin-bottom: .2rem;
+    font-weight: 1000;
+    font-size: 60px;
+    font-family: 'Abril Fatface';
+    letter-spacing: -1.5px;
+    padding: 0 .5rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2; /* Ensure this is higher than the z-index of the pseudo-element */
+    position: relative; /* Position the element so z-index is applied */
+}
+@keyframes blink{
+    0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+a:hover{
+    animation: blink 1s linear infinite;
+}
+a.active{
+    color: #000;
+    margin: 0 .4rem;
+}
+a.lang{
+    color: #727272;
+    margin: 0 .4rem;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0.5rem 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: top 0.6s, background-color 0.6s;
+    z-index: 1000;
+}
+
+header.sticky{
+    top: 0;
+    background-color: #fff;
+    position: fixed;
+}
+
+.headercontainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    gap: 2rem;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav{
+    color: #727272;
+    padding: .5rem;
+}
+
+.navactive{
+    color: #000;
+    padding: .5rem;
+}
+
+.container1{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.con1sub1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.con1sub2{
+    background-color: #6C6C6C;
+    width: 1px;
+    height: 28rem;
+}
+
+.con1sub3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    font-size: 14px;
+}
+.con1sub3 p{
+    margin-bottom: 10px;
+}
+
+.timelinecontainer{
+    border: solid 1px #000;
+    width: 90%;
+    height: 15rem;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container2{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con2sub2{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 17px;
+    width: 62%;
+
+}
+.container3{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.con3sub1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 17px;
+    width: 50%;
+
+}
+.con3sub2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    font-size: 17px;
+}
+.container4{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+}
+
+.con4sub1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 17px;
+    width: 29%;
+}
+
+.con4sub2{
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 auto;
+    font-size: 17px;
+    width: 29%;
+}
+
+.con4sub3{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 17px;
+    width: 29%;
+}
+
+.container5{
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: 5rem;
+    gap: 16px;
+}
+
+.con5sub1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.con5sub1 p{
+    margin: 0 0 1rem 0;
+    font-size: 17px;
+}
+
+.container5s{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.con5sub2{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 60%;
+    align-items: center;
+}
+.con5sub2 p{
+    margin: 0 0 1rem 0;
+    font-size: 17px;
+}
+.container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.con6sub1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10rem 15rem;
+    
+}
+.con6sub1 img{
+    object-fit: cover;
+    width: 10rem;
+    height: 15rem;
+}
+.con6sub2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10rem 0;
+}
+.con6sub3{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+.con6sub3 video{
+    width: 50rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.container6 img{
+    width: 10rem;
+}
+
+.container7{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container7 img{
+    width: 10rem;
+    height: 13rem;
+}
+
+.con7sub1{
+    display: flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    font-size: 17px;
+}
+.con7sub2{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+.con6sub2 img{
+    object-fit: cover;
+    width: 25rem;
+    height: 18rem;
+}
+
+
+footer{
+    display: flex;
+    bottom: -30vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding : 0.5rem 0;
+    position: relative;
+}
+.footercontainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.container8{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+
+}
+.paddingend{
+    padding-bottom: 5rem;
+}
+.padding-endx{
+    padding-top: 5rem;
+}
+
+.horizon{
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10rem;
+}
+
+.horizon img{
+    width: 30rem;
+    height: 18rem;
+    padding: 1rem;
+    object-fit: cover;
+}
+.con5sub1 a{
+    text-decoration:underline;
+}
+.con5sub1 a:hover{
+    animation: none;
+
+}
+
+.con6sub4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5rem;
+}
+
+.con6sub4 img{
+    height: 20rem;
+}
+
+
+body{
+    background-image: url("/image/bg.png");
+    background-color: #C4A06A;
+    background-size:contain;
+    font-family: 'Abhaya Libre';
+    margin: 0;
+    padding: 0;
+}
+
+.lim:hover{
+    content: url("/image/limss.png");
+}
+
+.center{
+    align-self: center;
+}
