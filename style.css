@@ -385,8 +385,9 @@ nav{
 }
 
 .container7 img{
-    width: 10rem;
-    height: 13rem;
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .con7sub1{
